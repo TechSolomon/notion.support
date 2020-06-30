@@ -42,7 +42,8 @@ def get_mailbox_contents(mailbox):
     rv, data = con.select(mailbox)
 
     if rv == "OK":
-        print("processing mailbox ¯\_(ツ)_/¯ \n")
+        # ¯\_(ツ)_/¯
+        print("processing mailbox \n")
         process_mailbox(con)
     else:
         print("-=-=-=-=-=-=-=-=-=-=-")
